@@ -3,12 +3,12 @@ const { Post } = require('../models');
 const postdata = [
   {
     title: 'Beyonce',
-  //  post_url: '',
+   post_url: 'www.sjfe',
     user_id: 1
   },
   {
     title: 'Prince',
-   // post_url: '',
+   post_url: 'kefngsg',
     user_id: 3
   },
   
