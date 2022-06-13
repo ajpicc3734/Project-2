@@ -1,44 +1,42 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
 
 class Record extends Model {}
 
 Record.init(
-    {
-        id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            primaryKey: true,
-            autoIncrement: true,
-        },
-        title: {
-            type: DataTypes.STRING,
-            allowNull: false,
-          },
-          artist: {
-            type: DataTypes.STRING,
-            allowNull: false,
-          },
-          filename: {
-              type: DataTypes.BLOB,
-              allowNull: true,
-          },
-          user_id: {
-              type: DataTypes.INTEGER,
-              references: {
-                  model: 'user',
-                  key: 'id',
-              },
-          },
-
-
-},
-{
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    artist: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    filename: {
+      type: DataTypes.BLOB,
+      allowNull: true,
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: "user",
+        key: "id",
+      },
+    },
+  },
+  {
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'record',
-}
+    modelName: "record",
+  }
 );
 
 module.exports = Record;
