@@ -9,7 +9,7 @@ const vinyldata = [
     },
     {
         title: '3 Feet High and Rising',
-        artist: 'De La Soul'
+        artist: 'De La Soul',
         filename: 'public\css\images\3FeetAnd.jpg',
         user_id: // John
     },
@@ -87,7 +87,7 @@ const vinyldata = [
     }, 
     {
         title: 'Bitches Brew',
-        artist: 'Miles Davis'
+        artist: 'Miles Davis',
         filename: 'public\css\images\bitchesbrew.jpg',
         user_id: //user id here
     }, 
