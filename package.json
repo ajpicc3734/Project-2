@@ -11,7 +11,8 @@
     "sequelize": "^6.20.1"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "seed": "node seeds/index.js"
   },
   "name": "project-2",
   "description": "",
@@ -26,5 +27,6 @@
   "bugs": {
     "url": "https://github.com/ajpicc3734/Project-2/issues"
   },
-  "homepage": "https://github.com/ajpicc3734/Project-2#readme"
+  "homepage": "https://github.com/ajpicc3734/Project-2#readme",
+  "keywords": []
 }

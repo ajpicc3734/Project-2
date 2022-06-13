@@ -8,7 +8,8 @@ const routes = require("./controllers");
 
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
-
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {

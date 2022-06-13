@@ -1,11 +1,11 @@
-DROP DATABASE IF EXISTS record_collection_db;
-    -- `Artist` VARCHAR(35) CHARACTER SET utf8,
-    -- `Album_Name` VARCHAR(44) CHARACTER SET utf8,
-    -- `Release_Month_Year` VARCHAR(19) CHARACTER SET utf8,
-    -- `Genre` INT,
-    -- `Column_5` VARCHAR(6) CHARACTER SET utf8
-
-CREATE DATABASE record_collection_db;
+-- CREATE TABLE IF NOT EXISTS Vinyl_Table_Information (
+--     `Artist` VARCHAR(35) CHARACTER SET utf8,
+--     `Album_Name` VARCHAR(44) CHARACTER SET utf8,
+--     `Release_Month_Year` VARCHAR(19) CHARACTER SET utf8,
+--     `Genre` INT,
+--     `Column_5` VARCHAR(6) CHARACTER SET utf8
+-- );
+-- INSERT INTO Vinyl_Table_Information VALUES
 --     ('Wu-Tang Clan','Enter the Wu-Tang
 -- (36 Chambers)','1993-11-01 00:00:00',NULL,NULL),
 --     ('De La Soul','3 Feet High and Rising','1989-03-01 00:00:00',NULL,'John'),
@@ -35,3 +35,7 @@ CREATE DATABASE record_collection_db;
 --     ('JIMI HENDRIX','EXPERIENCE HENDRIX: THE BEST OF JIMI HENDRIX','1997',NULL,NULL),
 --     ('BEYONCE','THE HOMECOMMING : LIVE','2018',NULL,NULL),
 --     ('KENDRICK LAMAR','GOOD KID M.A.A.D CITY','2012',NULL,NULL);
+
+DROP DATABASE IF EXISTS record_collection_db;
+
+CREATE DATABASE record_collection_db;
