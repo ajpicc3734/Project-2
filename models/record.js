@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequilize');
 const sequelize = require('../config/connection');
 
-class Record extends Model {}
+class Record extends Model { }
 
 Record.init(
     {
@@ -14,31 +14,31 @@ Record.init(
         title: {
             type: DataTypes.STRING,
             allowNull: false,
-          },
-          artist: {
+        },
+        artist: {
             type: DataTypes.STRING,
             allowNull: false,
-          },
-          filename: {
-              type: DataTypes.STRING,
-              allowNull: false,
-          },
-          user_id: {
-              type: DataTypes.STRING,
-              references: {
-                  model: 'user',
-                  key: 'id',
-              },
-          },
+        },
+        filename: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        user_id: {
+            type: DataTypes.STRING,
+            references: {
+                model: 'user',
+                key: 'id',
+            },
+        },
 
 
-},
-{
-    sequelize,
-    freezeTableName: true,
-    underscored: true,
-    modelName: 'record',
-}
+    },
+    {
+        sequelize,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'record',
+    }
 );
 
 module.exports = Record;
