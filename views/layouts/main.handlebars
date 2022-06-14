@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
+<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Just Tech News</title>
-  {{!-- <link rel="stylesheet" href="/stylesheets/style.css"> --}}
+  <title>Vinyl Collectors</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
-      <h1>
-        <a href="/">Vinyl Collectors</a>
-      </h1>
-    </header>
-    <main>
-      {{{ body }}}
-      <nav>
-        <h2>Image Uploader</h2>
-        <a href="/images">
-        Images
-        </a>
-      </nav>
-    </main>
-    <footer>
-      Vinyl Collectors
-    </footer>
-  </div>
-
+  <header>
+    <h1>Welcome to Vinyl Collectors</h1>
+  </header>
+  <nav>
+    <a href="/">Home</a>
+    {{#if loggedIn}}
+    <button id="logout" class="btn-no-style">Logout</button>
+    {{else}}
+    <a href="/login">Login</a>
+    {{/if}}
+  </nav>
+  <main>
+    <aside>
+      <h2></h2>
+    </aside>
+    <div class="Replace with new name">
+      {{{body}}}
+    </div>
+  </main>
+  <footer>
+    Vinyl Collectors
+  </footer>
+  {{#if loggedIn}}
+  <script src="replace with correct file"></script>
+  {{/if}}
 </body>
-
-</html>
