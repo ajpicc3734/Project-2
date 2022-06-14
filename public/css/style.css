@@ -1,0 +1,27 @@
+
+header {
+    text-align: center;
+   
+}
+
+header, a {
+    margin: 5px;
+    padding: 5px;
+}
+
+.hero {
+    background-image: url(../css/images/mick-haupt-CbNBjnXXhNg-unsplash.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-position: center;
+}
+
+.body {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
