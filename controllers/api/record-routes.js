@@ -4,7 +4,7 @@ const { Record, User } = require('../../models');
 // get all users
 router.get('/', (req, res) => {
   Record.findAll({
-    attributes: ['id', 'title', 'artist', 'filename','created_at'],
+    attributes: ['id', 'title', 'artist', 'filename', 'created_at'],
     order: [['created_at', 'DESC']],
     include: [
       {
@@ -25,7 +25,7 @@ router.get('/:id', (req, res) => {
     where: {
       id: req.params.id
     },
-    attributes: ['id', 'title', 'artist', 'filename','created_at'],
+    attributes: ['id', 'title', 'artist', 'filename', 'created_at'],
     include: [
       {
         model: User,
@@ -50,7 +50,7 @@ router.post('/', (req, res) => {
   Record.create({
     title: req.body.title,
     artist: req.body.artist,
-   filename: req.body.filename,
+    filename: req.body.filename,
   })
     .then(dbRecordData => res.json(dbRecordData))
     .catch(err => {
