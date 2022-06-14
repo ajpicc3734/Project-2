@@ -1,0 +1,18 @@
+<ol>
+  {{#each records}}
+  <li>
+    <article class="post">
+      <div class="title">
+      
+      </div>
+      <div>Artist: {{artist}}</div>
+      <div>Title: {{title}} </div>
+      <div>filename: {{filename}}</div>
+      <div class="meta">
+
+        {{!-- <a href="/post/{{id}}">{{comments.length}} comment(s)</a> --}}
+      </div>
+    </article>
+  </li>
+  {{/each}}
+</ol>
