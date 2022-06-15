@@ -1,4 +1,4 @@
-<ol class="post-list">
+{{!-- <ol class="post-list">
   {{#each posts}}
   <li>
     <article class="post">
@@ -13,31 +13,27 @@
     </article>
   </li>
   {{/each}}
-  {{#each records}}
-  <li>
-    <article class="vinyl">
-      <div class="title">
-        <a href="{{artist}}" target="_blank">{{artist}}</a>
-        <span>Artist: {{artist}}</span>
-      </div>
-    </article>
-  </li>
-  {{/each}}
-</ol>
+   --
+{{!-- <div>
+  <div><a href="/rec">view records</a></div>
 
-<form id="upload">
-  <div>
-    <label for="imageUpload">Image</label>
-    <input type="file" name="image" id="imageUpload" />
+</div>
 
-  </div>
-  <div>
-    <label for="fileName">File Name</label>
-    <input type="text" name="fileName" id="fileName" />
+<div><a href="/use">view users</a></div> --}}
 
-  </div>
+<section class="hero"></section>
 
-  <button type="submit">Submit</button>
-</form>
+<section class="body">
+  <h2>Welcome to Vinyl Collectors.. <br/>A One Stop Shop For Vinyl Lovers</h2>
 
-<script src="/imageUpload.js"></script>
+<div id ="options">
+  <a href="/use"> Browse Users</a>
+  <br>
+  <a href="/rec">Browse Records</a>
+  <br>
+  <a href="/post">Browse Posts</a>
+  <br>
+  <br>
+</div>
+</section>
+

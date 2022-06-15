@@ -9,16 +9,19 @@
 
 <body>
   <header>
-    <h1>Welcome to Vinyl Collectors</h1>
+    <h1>Vinyl Collectors</h1>
+   <nav>
+     <a href="/">Home</a>
+      {{#if loggedIn}}
+      <button id="logout" class="btn-no-style">Logout</button>
+      {{else}}
+      <a href="/login">Login</a>
+      {{/if}}
+      <a href="/use">Users</a>
+      <a href="/rec">Records</a>
+      <a href="/post">Posts</a>
+   </nav>
   </header>
-  <nav>
-    <a href="/">Home</a>
-    {{#if loggedIn}}
-    <button id="logout" class="btn-no-style">Logout</button>
-    {{else}}
-    <a href="/login">Login</a>
-    {{/if}}
-  </nav>
   <main>
     <aside>
       <h2></h2>
@@ -28,7 +31,7 @@
     </div>
   </main>
   <footer>
-    Vinyl Collectors
+    Vinyl Collectors 2022
   </footer>
   {{#if loggedIn}}
   <script src="replace with correct file"></script>
