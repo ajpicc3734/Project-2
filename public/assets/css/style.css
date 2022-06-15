@@ -9,7 +9,7 @@ header {
 }
 
 .hero {
-    background-image: url(../css/images/mick-haupt-CbNBjnXXhNg-unsplash.jpg);
+    background-image: url(/assets/images/mick-haupt-CbNBjnXXhNg-unsplash.jpg);
     background-size: cover;
     height: 400px;
     width: 100%;
@@ -104,6 +104,29 @@ article{
     margin:20px;
     padding: 10px;
 }
+
+#upload {
+    border: black solid 2px;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+
+}
+
+.record-image {
+    display: flex;
+    width: 300px;
+    height:300px;
+    object-fit: scale-down;
+    
+}
+
+.post {
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER*/
 
