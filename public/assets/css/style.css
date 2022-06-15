@@ -149,11 +149,15 @@ article{
   }
 
   .hero {
-    background-image: url(../css/images/mick-haupt-CbNBjnXXhNg-unsplash.jpg);
+    background-image: url(../images/mick-haupt-CbNBjnXXhNg-unsplash.jpg);
     background-size: cover;
     height: 250px;
     width: 100%;
     margin-bottom: 25px;
     background-position: center;
 }
+ /* .record-image{
+
+
+} */
 }

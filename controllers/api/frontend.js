@@ -2,7 +2,7 @@ const router = require("express").Router();
 const Image = require("../../models/image");
 
 router.get("/", (req, res) => {
-  res.render("home");
+  res.render("homepage");
 });
 
 router.get("/images", (req, res) => {
