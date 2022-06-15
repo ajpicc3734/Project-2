@@ -20,7 +20,7 @@ Record.init(
       allowNull: false,
     },
     filename: {
-      type: DataTypes.BLOB,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     user_id: {
