@@ -12,7 +12,7 @@ router.post("/image", upload.single("image"), (req, res) => {
             imageName: req.body.fileName,
             imageURL: result.secure_url,
         }).then((imageData) => {
-            res.send("completed!");
+            res.send("complete!");
         });
     });
 });
