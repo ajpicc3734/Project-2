@@ -1,4 +1,4 @@
-form.addEventListener('submit', uploadImage);
+// form.addEventListener('submit', uploadImage);
 
 
 window.addEventListener("load", function () {
