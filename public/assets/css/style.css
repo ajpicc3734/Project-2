@@ -8,7 +8,7 @@ header {
 }
 
 .hero {
-    background-image: url(../css/images/mick-haupt-CbNBjnXXhNg-unsplash.jpg);
+    background-image: url(/assets/images/mick-haupt-CbNBjnXXhNg-unsplash.jpg);
     background-size: cover;
     height: 400px;
     width: 100%;
@@ -113,6 +113,29 @@ article {
     padding: 10px;
 }
 
+#upload {
+    border: black solid 2px;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+
+}
+
+.record-image {
+    display: flex;
+    width: 300px;
+    height:300px;
+    object-fit: scale-down;
+    
+}
+
+.post {
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER*/
 
 @media screen and (max-width: 575px) {
@@ -133,12 +156,16 @@ article {
         font-weight: bold;
     }
 
-    .hero {
-        background-image: url(../css/images/mick-haupt-CbNBjnXXhNg-unsplash.jpg);
-        background-size: cover;
-        height: 250px;
-        width: 100%;
-        margin-bottom: 25px;
-        background-position: center;
-    }
+  .hero {
+    background-image: url(../images/mick-haupt-CbNBjnXXhNg-unsplash.jpg);
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-position: center;
+}
+ /* .record-image{
+
+
+} */
 }
