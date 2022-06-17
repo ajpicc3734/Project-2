@@ -1,20 +1,20 @@
 const loginFormHandler = async function (event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    const usernameEl = document.querySelector("#username-input-login");
-    const passwordEl = document.querySelector("#password-input-login");
-    fetch("/api/users/login", {
-        method: "post",
-        body: JSON.stringify({
-            username: usernameEl.value,
-            password: passwordEl.value
-        }),
-        headers: { "Content-Type": "application/json" }
+  const usernameEl = document.querySelector("#username-input-login");
+  const passwordEl = document.querySelector("#password-input-login");
+  fetch("/api/users/login", {
+    method: "post",
+    body: JSON.stringify({
+      username: usernameEl.value,
+      password: passwordEl.value,
+    }),
+    headers: { "Content-Type": "application/json" },
+  })
+    .then(function () {
+      document.location.replace("/");
     })
-        .then(function () {
-            document.location.replace("/");
-        })
-        .catch(err => console.log(err));
+    .catch((err) => console.log(err));
 };
 
 // async function loginFormHandler(event) {
@@ -34,7 +34,7 @@ const loginFormHandler = async function (event) {
 //     });
 
 //     if (response.ok) {
-//       document.location.replace("/dashboard/");
+//       document.location.replace("/");
 //     } else {
 //       alert(response.statusText);
 //     }
