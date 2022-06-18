@@ -22,4 +22,3 @@ The purpose of this application is to provide an online community where lovers o
 ## Contribution
 Lunice Alliance, Andrew Piccolo, John Cabural, Chris Bannerman, Mihir Patel, 
 
-
