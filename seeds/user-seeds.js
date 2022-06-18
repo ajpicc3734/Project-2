@@ -20,9 +20,9 @@ const userdata = [
     password: 'password123',
     user_id: '3'
   },
- 
+
 ];
 
-const seedUsers = () => User.bulkCreate(userdata, {individualHooks: true});
+const seedUsers = () => User.bulkCreate(userdata, { individualHooks: true });
 
 module.exports = seedUsers;

@@ -10,7 +10,10 @@
       
       </div>
       <div>Username: {{username}}</div>
-      <div>Record Collection {{records}} </div>
+      <div>Record Collection </div>
+      {{#each records}}
+      <li>{{title}}</li>
+      {{/each}}
       <div><a href="mailto:{{email}}">Inquire About This Collection</a></div>
       <div class="meta">
       </div>

@@ -10,17 +10,17 @@
 <body>
   <header>
     <h1>Vinyl Collectors</h1>
-   <nav>
-     <a href="/">Home</a>
-      {{#if loggedIn}}
+    <nav>
+      <a href="/">Home</a>
+      {{!-- {{#if loggedIn}} --}}
       <button id="logout" class="btn-no-style">Logout</button>
-      {{else}}
+      {{!-- {{else}} --}}
       <a href="/login">Login</a>
-      {{/if}}
+      {{!-- {{/if}} --}}
       <a href="/use">Users</a>
       <a href="/rec">Records</a>
       <a href="/post">Posts</a>
-   </nav>
+    </nav>
   </header>
   <main>
     <aside>
@@ -33,7 +33,7 @@
   <footer>
     Vinyl Collectors 2022
   </footer>
-  {{#if loggedIn}}
-  <script src="replace with correct file"></script>
-  {{/if}}
+  {{!-- {{#if loggedIn}} --}}
+  <script src="/assets/js/logout.js"></script>
+  {{!-- {{/if}} --}}
 </body>
