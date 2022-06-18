@@ -12,6 +12,7 @@ header {
     background-size: cover;
     height: 400px;
     width: 100%;
+    flex-direction: wrap;
     margin-bottom: 25px;
     background-position: center;
 }
@@ -135,6 +136,13 @@ article {
 
 }
 
+ol {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 1;
+}
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER*/
 
