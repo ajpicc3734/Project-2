@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const Image = require("../../models/image");
+const Image = require("../../models");
 
 router.get("/", (req, res) => {
   res.render("homepage");
