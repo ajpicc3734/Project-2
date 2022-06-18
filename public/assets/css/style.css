@@ -135,6 +135,13 @@ article {
 
 }
 
+ol {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 1;
+}
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER*/
 
