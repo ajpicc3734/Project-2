@@ -12,15 +12,15 @@
     <h1>Vinyl Collectors</h1>
     <nav>
       <a href="/">Home</a>
-      {{!-- {{#if loggedIn}} --}}
-      <button id="logout" class="btn-no-style">Logout</button>
-      {{!-- {{else}} --}}
-      <a href="/login">Login</a>
-      {{!-- {{/if}} --}}
       <a href="/use">Users</a>
       <a href="/rec">Records</a>
       <a href="/addrec">Add a Record to Your Collection</a>
       <a href="/post">Posts</a>
+      <a href="/login">Login</a>
+      <button id="logout" class="btn">Logout</button>
+      {{!-- {{#if loggedIn}} --}}
+      {{!-- {{else}} --}}
+      {{!-- {{/if}} --}}
     </nav>
   </header>
   <main>
@@ -38,3 +38,4 @@
   <script src="/assets/js/logout.js"></script>
   {{!-- {{/if}} --}}
 </body>
+</html>
