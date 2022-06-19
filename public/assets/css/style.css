@@ -154,13 +154,20 @@ article {
 .user-post{
     border: 3px rgba(12, 12, 12, 0.769) solid;
 }
+/* posts */
 .post {
     font-weight: bold;
     font-size: 18px;
 
 }
-
-
+.post-list{
+    border: 2px solid black;
+}
+#addNewPost{
+    text-align: center;
+    font-size: 30px;
+}
+/* record */
 .record-post{
 border: 5px solid rgba(12, 12, 12, 0.769);
 }
@@ -185,8 +192,25 @@ border: 5px solid rgba(12, 12, 12, 0.769);
     color: aquamarine;
     flex-wrap: wrap;
 }
+a {
+    color: rgb(166, 69, 69);
+  }
+  
 a:link {
     color: rgb(166, 69, 69);
+  }
+  a:hover {
+    color: rgb(170, 76, 47);
+    font-style: italic;
+  }
+  /* login */
+  #login-form{
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  #signup {
+    font-size: 20px;
+    padding:50px;
   }
   
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER*/
