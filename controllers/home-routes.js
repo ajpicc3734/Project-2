@@ -58,6 +58,38 @@ router.get("/post", (req, res) => {
     });
 });
 
+router.get("/post/:id", (req, res) => {
+  Post.findOne({
+    where: {
+      id: req.params.id,
+    },
+    attributes: ["id", "title", "post_url", "created_at"],
+    include: [
+      {
+        model: Comment,
+        attributes: ["id", "comment_text", "user_id", "created_at"],
+        include: {
+          model: User,
+          attributes: ["username"],
+        },
+      },
+      {
+        model: User,
+        attributes: ["username"],
+      },
+    ],
+  })
+    .then((dbPostData) => {
+      const post = dbPostData.get({ plain: true });
+      console.log(post);
+      res.render("single-post", { post });
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
 router.get("/rec", (req, res) => {
   Record.findAll({
     attributes: ["id", "title", "artist", "filename", "created_at"],
