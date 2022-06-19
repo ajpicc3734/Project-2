@@ -14,7 +14,7 @@ const vinylData = [
         user_id: '2'
     },
     {
-        title: 'Dicovery',
+        title: 'Discovery',
         artist: 'Daft Punk',
         filename: 'discovery.jpg',
         user_id: '3'
