@@ -124,13 +124,26 @@ article {
     object-fit: scale-down;
     
 }
-
-.post {
-    font-weight: bold;
-    font-size: 18px;
-
+/* //user// */
+#user-id{
+    font-size: 20px;
+    font-weight: BOLD;
+    color:rgba(213, 89, 17, 0.693);
+    text-align: center;
+   text-decoration: underline;
 }
 
+#user-record {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 1;}
+
+.user-post{
+    text-align: left;
+    padding-left: 30px;
+}
 #recordlist {
     display:flex;
     flex-direction: row;
@@ -138,6 +151,16 @@ article {
     justify-content: space-around;
     flex: 1;
 }
+.user-post{
+    border: 3px rgba(12, 12, 12, 0.769) solid;
+}
+.post {
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+
 .record-post{
 border: 5px solid rgba(12, 12, 12, 0.769);
 }
@@ -149,8 +172,8 @@ border: 5px solid rgba(12, 12, 12, 0.769);
 }
 #recordTitle{
     text-align: center;
+    font-size: 20px;
     color:rgba(213, 89, 17, 0.693);
-    font-weight: bold;
 }
 
 #record-message{

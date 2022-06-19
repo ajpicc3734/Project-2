@@ -1,26 +1,25 @@
 <h3>Users</h3>
 
-<div id="forum">
+<div id="recordlist">
 
-<ol>
+<div id="user-record">
   {{#each users}}
-  <li>
-    <article class="post">
-      <div class="title">
-      
-      </div>
-      <div>Username: {{username}}</div>
-      <div>Record Collection </div>
+  
+    <article class="user-post">
+      <div class="title"></div>
+      <div id="user-id">{{username}}'s Record Collection</div>
+    
       {{#each records}}
-      <li>{{title}}</li>
+      <li>{{title}} - {{artist}}</li>
       {{/each}}
-      <div><a href="mailto:{{email}}">Inquire About This Collection</a></div>
-      <div class="meta">
-      </div>
+      <div><a href="mailto:{{user.email}}">Inquire About This Collection</a></div>
+      <div class="meta"></div>
     </article>
-  </li>
+ 
   {{/each}}
-</ol>
+  </div>
+
+</div>
 </div>
 
 
