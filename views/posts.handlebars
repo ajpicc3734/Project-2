@@ -2,7 +2,7 @@
 <div id ="forum">
   <div class="post-list">
   {{#each posts}}
-  <li>
+  <div id="post">
     <article class="post">
       <div class="title">
         <a href="{{post_url}}" target="_blank">{{title}}</a>
@@ -13,7 +13,7 @@
         <a href="/post/{{id}}">{{comments.length}} comment(s)</a>
       </div>
     </article>
-  </li>
+  </div>
   {{/each}}
   </div>
 </div>

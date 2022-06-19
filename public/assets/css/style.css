@@ -158,13 +158,16 @@ h4{
 }
 #comment-section{
     padding:20px;
-    margin:50px;
+    margin-left: auto;
+    margin-right:auto;
     width:75%;
 }
 #comment-text{
     font-size: 18px;
-   
+    border: 1px black solid;
+    margin:5px;
 }
+
 #post-title{
     padding-top: 50px;
     font-size: 25px;
@@ -204,13 +207,20 @@ h4{
     border: 3px rgba(12, 12, 12, 0.769) solid;
 }
 /* posts page */
-.post {
+#post {
     font-weight: bold;
     font-size: 18px;
+    border: 1px black solid;
+    margin:5px;
 
 }
 .post-list{
-    border: 2px solid black;
+    border: 3px solid black;
+    padding: 20px;
+    margin-left: auto;
+    margin-right:auto;
+    width: 75%;
+    
 }
 #addNewPost{
     text-align: center;
