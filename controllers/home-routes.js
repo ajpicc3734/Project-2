@@ -112,6 +112,14 @@ router.get("/rec", (req, res) => {
     });
 });
 
+router.get("/addrec", (req, res) => {
+  if (!req.session.loggedIn) {
+    res.redirect("/login");
+    return;
+  }
+  res.render("addRecord");
+});
+
 router.get("/use", (req, res) => {
   User.findAll({
     attributes: { exclude: ["password"] },
@@ -134,19 +142,19 @@ router.get("/use", (req, res) => {
 });
 
 router.get("/login", (req, res) => {
-  // if (req.session.loggedIn) {
-  //   res.redirect("/");
-  //   return;
-  // }
+  if (req.session.loggedIn) {
+    res.redirect("/");
+    return;
+  }
 
   res.render("login");
 });
 
 router.get("/signup", (req, res) => {
-  // if (req.session.loggedIn) {
-  //   res.redirect("/");
-  //   return;
-  // }
+  if (req.session.loggedIn) {
+    res.redirect("/");
+    return;
+  }
 
   res.render("signup");
 });
