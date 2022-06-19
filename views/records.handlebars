@@ -1,18 +1,23 @@
 <h3>Records</h3>
 
 <div id="forum">
-<ol>
+  <div id="container" class="record">
+<ol id="recordlist">
   {{#each records}}
   <li>
-    <article class="post">
+    <article class="record-post">
       <div class="title">
       
       </div>
-      <div>Artist: {{artist}}</div>
-      <div>Title: {{title}} </div>
+      <div id="recordArtist">Artist: {{artist}}</div>
+      <div id ="recordTitle">Title: {{title}} </div>
       <img class="record-image" src="/assets/images/{{filename}}"/> 
-      <div>Belongs to {{user.username}} </div>
-      <div><a href="mailto:{{email}}">Inquire About This Record</a></div>
+      <div id="record-message">
+      <div> {{user.username}} owns this record! </div>
+      <div id="userEmail"><a href="mailto:{{user.email}}">For more infomation send <br/>{{user.username}} a message </a></div>
+      
+      </div>
+      </article>
       <div class="meta">
 
         {{!-- <a href="/post/{{id}}">{{comments.length}} comment(s)</a> --}}
@@ -22,6 +27,8 @@
   {{/each}}
 </ol>
 </div>
+</div>
+
 
 
 <form id="upload">

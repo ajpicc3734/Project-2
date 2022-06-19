@@ -104,11 +104,6 @@ footer h2 {
     text-align: center;
 }
 
-#forum {
-    border: black solid 2px;
-    margin: 50px;
-}
-
 article {
     margin: 20px;
     padding: 10px;
@@ -136,14 +131,41 @@ article {
 
 }
 
-ol {
+#recordlist {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     flex: 1;
 }
+.record-post{
+border: 5px solid rgba(12, 12, 12, 0.769);
+}
 
+#recordArtist{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(22, 37, 84);
+}
+#recordTitle{
+    text-align: center;
+    color:rgba(213, 89, 17, 0.693);
+    font-weight: bold;
+}
+
+#record-message{
+    text-align: center;
+  
+}
+#userEmail{
+    text-align: center;
+    color: aquamarine;
+    flex-wrap: wrap;
+}
+a:link {
+    color: rgb(166, 69, 69);
+  }
+  
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER*/
 
 @media screen and (max-width: 575px) {
