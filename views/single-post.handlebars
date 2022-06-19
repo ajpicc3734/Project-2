@@ -1,12 +1,16 @@
+<h3>Let's Chat</h3>
+<div id="single-post">
 <section class="single-post">
-<div>{{post.title}}</div>
-{{!-- <div>{{post.post_url}}</div> --}}
+<div id="post-title">{{post.title}}</div>
+
 <a href="{{post.post_url}}" target="_blank">View Link</a>
-<div>Comments: </div>
+<div id="comment-section">
+<h4> Comments: </h4>
 {{#each post.comments}}
 
-<div>{{comment_text}}</div>
+<div id="comment-text">"{{comment_text}}" -  {{user.username}}</div>
 {{/each}}
+</div>
 </section>
 
 <form class="comment-form">
@@ -15,8 +19,10 @@
         <textarea name="comment-text"></textarea>
     </div>
     <div>
-        <button type="submit">comment</button>
+        <button class="btn" type="submit"> Comment </button>
     </div>
 </form>
+
+</div>
 
 <script src="/assets/js/comment.js"></script>

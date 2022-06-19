@@ -38,15 +38,16 @@ h1 {
 h2 {
     font-style: italic;
     text-align: center;
-    font-size: 30px;
-    color:rgb(22, 37, 84);
+    font-size: 35px;
+    color:rgb(15, 16, 16);
 }
 
 h3 {
     text-align: center;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     color:rgb(22, 37, 84);
+    padding: 30px;
 }
 
 nav {
@@ -90,7 +91,7 @@ html {
 
 .btn{
     border-radius: 8px;
-    margin: 20px;
+    margin: 10px;
     text-align: center;
     font-size: 20px;
     color: rgb(236, 122, 66);
@@ -143,7 +144,39 @@ article {
     object-fit: scale-down;
     
 }
-/* //user// */
+/* singlepage */
+#single-post{
+    text-align: center;
+}
+textarea {
+    width:50%;
+    height: 200px;
+}
+h4{
+    font-size: 25px;
+    text-align: left;
+}
+#comment-section{
+    padding:20px;
+    margin-left: auto;
+    margin-right:auto;
+    width:75%;
+}
+#comment-text{
+    font-size: 18px;
+    border: 1px black solid;
+    margin:5px;
+}
+
+#post-title{
+    padding-top: 50px;
+    font-size: 25px;
+    color: rgb(22, 37, 84);
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+/* //user page// */
 #user-id{
     font-size: 20px;
     font-weight: BOLD;
@@ -173,20 +206,27 @@ article {
 .user-post{
     border: 3px rgba(12, 12, 12, 0.769) solid;
 }
-/* posts */
-.post {
+/* posts page */
+#post {
     font-weight: bold;
     font-size: 18px;
+    border: 1px black solid;
+    margin:5px;
 
 }
 .post-list{
-    border: 2px solid black;
+    border: 3px solid black;
+    padding: 20px;
+    margin-left: auto;
+    margin-right:auto;
+    width: 75%;
+    
 }
 #addNewPost{
     text-align: center;
     font-size: 30px;
 }
-/* record */
+/* record page*/
 .record-post{
 border: 5px solid rgba(12, 12, 12, 0.769);
 }
@@ -222,7 +262,7 @@ a:link {
     color: rgb(170, 76, 47);
     font-style: italic;
   }
-  /* login */
+  /* forms */
   #login-form, #signup-form, #newPost{
     flex-wrap: wrap;
     text-align: center;
