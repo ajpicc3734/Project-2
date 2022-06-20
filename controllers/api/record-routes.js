@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const sequelize = require("../../config/connection");
 const { Record, User } = require("../../models");
-const withAuth = require('../../utils/auth');
+const withAuth = require("../../utils/auth");
 
 // get all users
 router.get("/", (req, res) => {
@@ -53,6 +53,7 @@ router.post("/", withAuth, (req, res) => {
     title: req.body.title,
     artist: req.body.artist,
     filename: req.body.filename,
+    user_id: req.session.user_id,
   })
     .then((dbRecordData) => res.json(dbRecordData))
     .catch((err) => {

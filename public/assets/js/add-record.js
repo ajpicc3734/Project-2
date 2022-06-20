@@ -3,12 +3,14 @@ async function addRecrodForm(event) {
 
   const title = document.querySelector('input[name="record-title"]').value;
   const artist = document.querySelector('input[name="record-artist"]').value;
+  //const user_id = req.session.user_id;
 
   const response = await fetch(`/api/records`, {
     method: "POST",
     body: JSON.stringify({
       title,
       artist,
+      // user_id,
     }),
     headers: {
       "Content-Type": "application/json",
